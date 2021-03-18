@@ -1,26 +1,11 @@
 <template>
       <div>
-        <h1>User page</h1>
-        <input type="text" placeholder="Enter Id" v-model="userId">
-        <button @click="submit">Go _Id Page</button>
+        <h1>This is User.index Page (It's Nasted using nuxt-child )</h1>
       </div>
 </template>
 
 <script>
       export default {
-          data() {
-                return {
-                      userId:""
-                }
-          }, 
-          methods:{
-                submit(){
-                   this.$router.push('/users/' + this.userId)
-                }
-          } 
+        
       }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
